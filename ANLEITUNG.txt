@@ -1,0 +1,102 @@
+════════════════════════════════════════════════
+  TYPERACE — GITHUB + RAILWAY ANLEITUNG
+════════════════════════════════════════════════
+
+Alles kostenlos. In ca. 10 Minuten online.
+
+────────────────────────────────────────────────
+SCHRITT 1 — GitHub Repository erstellen
+────────────────────────────────────────────────
+
+1. Gehe zu: https://github.com
+2. Registriere dich (oder melde dich an)
+3. Klicke oben rechts auf "+" → "New repository"
+4. Repository Name: typerace
+5. Stelle auf "Public"
+6. Klicke "Create repository"
+
+Jetzt lade die Dateien hoch:
+7. Klicke "uploading an existing file"
+8. Lade ALLE diese Dateien/Ordner hoch:
+   ├── server.py
+   ├── requirements.txt
+   ├── Procfile
+   └── templates/
+       └── index.html
+
+   WICHTIG: Den Ordner "templates" mit index.html
+   drin als Ordner hochladen (nicht nur die Datei).
+
+   → Klicke "choose your files"
+   → Wähle alle Dateien + den templates-Ordner aus
+   → Klicke "Commit changes"
+
+────────────────────────────────────────────────
+SCHRITT 2 — Railway einrichten
+────────────────────────────────────────────────
+
+1. Gehe zu: https://railway.app
+2. Klicke "Login" → "Login with GitHub"
+3. GitHub-Konto verbinden (Erlaubnisse bestätigen)
+4. Im Dashboard: Klicke "New Project"
+5. Wähle "Deploy from GitHub repo"
+6. Wähle dein "typerace" Repository
+7. Railway erkennt automatisch Python → klicke "Deploy"
+
+Warte ca. 1-2 Minuten bis der Build fertig ist.
+
+────────────────────────────────────────────────
+SCHRITT 3 — Öffentliche URL aktivieren
+────────────────────────────────────────────────
+
+1. Klicke auf deinen "typerace" Service in Railway
+2. Gehe zum Tab "Settings"
+3. Scrolle zu "Networking" → "Public Networking"
+4. Klicke "Generate Domain"
+5. Du bekommst eine URL wie:
+   https://typerace-production-abc123.up.railway.app
+
+Das ist deine fertige Website! 🎉
+
+────────────────────────────────────────────────
+SCHRITT 4 — KI-Wörter aktivieren (optional)
+────────────────────────────────────────────────
+
+Ohne diesen Schritt läuft das Spiel mit
+vordefinierten Wörtern (funktioniert trotzdem!).
+
+Für KI-generierte Wörter:
+1. Gehe zu: https://console.anthropic.com
+2. Erstelle einen API Key
+3. In Railway → dein Service → Tab "Variables"
+4. Klicke "New Variable"
+   Name:  ANTHROPIC_API_KEY
+   Value: sk-ant-... (dein Key)
+5. Railway deployed automatisch neu
+
+════════════════════════════════════════════════
+  WIE SPIELER BEITRETEN
+════════════════════════════════════════════════
+
+1. Du (Host) öffnest deine Railway-URL
+2. Klickst "Neues Spiel als Host erstellen"
+3. Wählst Thema, Ziel, gibst deinen Namen ein
+4. Teilst den 6-stelligen Code mit Freunden
+5. Freunde öffnen dieselbe URL, geben den Code ein
+6. Du startest das Spiel → alle spielen gleichzeitig!
+
+════════════════════════════════════════════════
+  PROBLEME?
+════════════════════════════════════════════════
+
+Build schlägt fehl:
+→ Prüfe ob requirements.txt und Procfile
+  korrekt hochgeladen wurden
+
+Seite lädt nicht:
+→ Warte 2-3 Minuten nach dem ersten Deploy
+→ Prüfe Railway Logs (Tab "Deployments")
+
+════════════════════════════════════════════════
+  Viel Spaß beim Spielen! ⌨️🏆
+════════════════════════════════════════════════
